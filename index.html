@@ -16,6 +16,47 @@
 
   <body>
     <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a
+            onClick="window.location.reload();"
+            class="navbar-brand text-dark"
+            href="#"
+            >Hungry Monster</a
+          >
+          <div class="d-flex">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" href="#">About</a>
+                <a class="nav-link active" href="#">Recipes</a>
+                <a class="nav-link active" href="#">Blog</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- ./Navbar -->
+
+      <!-- Header -->
+      <div class="header">
+        <h1>Hungry Monster</h1>
+        <h5>Find any meal by your choice</h5>
+      </div>
+      <!-- ./Header -->
+
       <!-- Meal Search -->
       <div class="meal-search-area input-group mb-3">
         <input
@@ -32,43 +73,17 @@
       </div>
       <!-- ./Meal Search -->
 
+      <!-- Meal Detail -->
+      <div id="meal-detail"></div>
+      <!-- ./Meal Detail -->
+
       <!-- Meal List -->
       <div class="meals">
-        <div id="meal-list">
-          <!-- Meal Item 
-          <div class="meal-item">
-            <div class="meal-thumb">
-              <img src="food.jpg" alt="meal" />
-            </div>
-            <div class="meal-name">
-              <h2>Potato Chips</h2>
-            </div>
-          </div> 
-          ./Meal Item 
-           Meal Item
-          <div class="meal-item">
-            <div class="meal-thumb">
-              <img src="food.jpg" alt="meal" />
-            </div
-            <div class="meal-name">
-              <h2>Potato Chips</h2>
-            </div>
-          </div> 
-           ./Meal Item 
-           Meal Item
-          <div class="meal-item">
-            <div class="meal-thumb">
-              <img src="food.jpg" alt="meal" />
-            </div>
-            <div class="meal-name">
-              <h2>Potato Chips</h2>
-            </div>
-          </div>
-       ./Meal Item -->
-        </div>
+        <div id="meal-list"></div>
       </div>
       <div id="recipeDetail"></div>
     </div>
+    <!-- ./Meal List -->
     <script src="app.js"></script>
   </body>
 </html>
