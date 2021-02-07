@@ -41,7 +41,6 @@ const displayMealDetail = id => {
         })
 }
 
-
 const renderMealDetail = meal => {
     console.log(meal);
     const mealDetailDiv = document.getElementById("meal-detail")
@@ -57,8 +56,6 @@ const renderMealDetail = meal => {
            <li> ${meal.meals[0].strMeasure4} ${meal.meals[0].strIngredient4} </li>
            <li> ${meal.meals[0].strMeasure5} ${meal.meals[0].strIngredient5} </li>
            <li> ${meal.meals[0].strMeasure6} ${meal.meals[0].strIngredient6} </li>
-           <li> ${meal.meals[0].strMeasure7} ${meal.meals[0].strIngredient7} </li>
-           <li> ${meal.meals[0].strMeasure8} ${meal.meals[0].strIngredient8} </li>
         </ul>
         <h1>Instructions:</h1>
         <p>${meal.meals[0].strInstructions}</p>
