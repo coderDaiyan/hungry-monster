@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+.input-group {
+  margin-top: 50px;
+}
+#meal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.meal-item {
+  width: 300px;
+  background-color: #ebebeb !important;
+  border-radius: 20px;
+  margin: 50px 0;
+}
+.meal-item img {
+  width: 300px;
+  margin-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.meal-item h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 15px;
+}
