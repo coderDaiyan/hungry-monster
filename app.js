@@ -59,7 +59,6 @@ const renderMealDetail = meal => {
            <li> ${meal.meals[0].strMeasure6} ${meal.meals[0].strIngredient6} </li>
            <li> ${meal.meals[0].strMeasure7} ${meal.meals[0].strIngredient7} </li>
            <li> ${meal.meals[0].strMeasure8} ${meal.meals[0].strIngredient8} </li>
-           <li> ${meal.meals[0].strMeasure9} ${meal.meals[0].strIngredient9} </li>
         </ul>
         <h1>Instructions:</h1>
         <p>${meal.meals[0].strInstructions}</p>
