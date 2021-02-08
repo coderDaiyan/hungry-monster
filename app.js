@@ -1,4 +1,3 @@
-
 const searchBtn = document.getElementById("meal-btn")
 searchBtn.addEventListener('click', () => {
     let searchInput = document.getElementById('meal-input').value
@@ -12,7 +11,7 @@ searchBtn.addEventListener('click', () => {
                     newItem = newItem + `
                 <div id="meal-item" class="meal-item" data-id=${meal.idMeal}>
                     <div>
-                        <img onclick="displayMealDetail(${meal.idMeal})" src=${meal.strMealThumb} alt="meal" />
+                        <img onclick="displayMealDetail(${meal.idMeal})" src=${meal.strMealThumb} alt="meal">
                     </div>
                     <div>
                         <h2 id="meal-name">${meal.strMeal}</h2>
