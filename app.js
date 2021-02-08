@@ -6,10 +6,10 @@ searchBtn.addEventListener('click', () => {
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInput}`)
         .then(res => res.json())
         .then(data => {
-            let item = "";
+            let newItem = "";
             if (data.meals) {
                 data.meals.forEach(meal => {
-                    item = item + `
+                    newItem = newItem + `
                 <div id="meal-item" class="meal-item" data-id=${meal.idMeal}>
                     <div>
                         <img onclick="displayMealDetail(${meal.idMeal})" src=${meal.strMealThumb} alt="meal" />
@@ -21,11 +21,11 @@ searchBtn.addEventListener('click', () => {
                 `
                 });
             } else {
-                item = `
+                newItem = `
                 <h1 id="not-found-message">Sorry. We have no recipes in this name ${searchInput}</h1>
             `
             }
-            mealList.innerHTML = item;
+            mealList.innerHTML = newItem;
         })
 })
 
@@ -42,7 +42,6 @@ const displayMealDetail = id => {
 }
 
 const renderMealDetail = meal => {
-    console.log(meal);
     const mealDetailDiv = document.getElementById("meal-detail")
     mealDetailDiv.innerHTML = `
         <img src="${meal.meals[0].strMealThumb}" <br>
