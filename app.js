@@ -60,5 +60,3 @@ const renderMealDetail = meal => {
         <p>${meal.meals[0].strInstructions}</p>
     `
 }
-
-

@@ -56,6 +56,9 @@ li,
 p {
   color: white;
 }
+#meal-detail li {
+  list-style: none;
+}
 #meal-detail {
   display: none;
   width: 800px;
